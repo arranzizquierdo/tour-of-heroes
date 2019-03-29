@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { from } from 'rxjs';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { HeroService } from './hero.service';
 
 
 @NgModule({
@@ -20,7 +21,9 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    HeroService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
