@@ -8,6 +8,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { from } from 'rxjs';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroService } from './hero.service';
+import { MessagesComponent } from './messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -15,6 +17,8 @@ import { HeroService } from './hero.service';
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
+    MessagesComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
